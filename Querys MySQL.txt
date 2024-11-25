@@ -1,0 +1,19 @@
+Querys MySQL (Copiar y pegar en Workbench, correr linea por linea y gg)
+
+create database grweb;
+use grweb;
+
+CREATE TABLE scores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    player_name VARCHAR(100) NOT NULL,
+    score INT NOT NULL
+);
+
+INSERT INTO scores (player_name, score) VALUES
+('Profe', 1500),
+('Hermy', 1200),
+('Dharma', 1000),
+('Alan', 800);
+
+select * from scores;
+drop table scores;
